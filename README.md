@@ -67,5 +67,4 @@ It exports a function that takes state and action as inputs, parses out the acti
 scr/index is the main file for rendering the application. 
 
 #### UML
-Link to an image of the UML for your application and response to events
-![UML](lab-31-assignment1-UML.jpg)
+![UML](./lab-31-assignment1-UML.jpg)
