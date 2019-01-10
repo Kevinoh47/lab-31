@@ -69,9 +69,11 @@ scr/index is the main file for rendering the application.
 #### UML
 ![UML](lab31-assignment1-uml.png)
 
-## Lab 31 Assignment 2 New Reducer
 
+
+## Lab 31 Assignment 2 New Reducer
 ### Author: Kevin O'Halloran
+In the instruction, John writes that "The twist is that this new reducer will also be able to respond to actions that the other component fires." You can see this in my implementation by clicking on either the number or the Name. If you click on the name, both the Name and the Number are updated with a new name. On the other hand, if you click on the Number, both Name and Number are updated with a random number.
 
 ### Links and Resources
 * [codesandbox for assignment 2](https://codesandbox.io/s/n7onx9jj0j)
@@ -84,10 +86,10 @@ App martials other components and renders the page for src/index.js.
 The /src/components/app.js file exports the App class. 
 
 ####  `numbers.js`
-This component exports the Numbers class, which renders the number and provides functions for changing and resetting the number. These functions are wired to the Redux store via mapStateToProps and mapDispatchToProps.
+This component exports the Numbers class, which renders the number and provides functions for changing (changeMyNumber) and resetting the number (resetMyNumber). These functions are wired to the Redux store via mapStateToProps and mapDispatchToProps.
 
 ##### Exported Values and Methods
-The /src/components/numbers.js file exports a connection to the redux store via mapStateToProps and mapDispatchToProps, and via the exported Numbers class.
+The /src/components/numbers.js file exports the Numbers class and a connection to the redux store via mapStateToProps and mapDispatchToProps, and via the exported Numbers class.
 
 ####  `app-actions.js`
 This actions js file is used for wiring up changes between APP and the redux state store.
